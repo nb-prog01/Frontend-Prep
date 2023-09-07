@@ -51,6 +51,10 @@
     background-color: #bbbcbe;
   }
 
+  .calc-button:last-child:active {
+    background-color: #dcae64;
+  }
+
   .double {
     width: 48.4%;
   }
