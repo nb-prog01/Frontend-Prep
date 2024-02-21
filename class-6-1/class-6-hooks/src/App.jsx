@@ -9,7 +9,7 @@ function App() {
 
   // for polling todos every 10secs
 
-  useEffect(()=>{
+  useEffect(()=>{ 
     setInterval(()=>{
       fetch("https://sum-server.100xdevs.com/todos")
       .then(async function(res){
