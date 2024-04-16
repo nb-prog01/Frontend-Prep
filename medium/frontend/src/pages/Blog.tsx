@@ -1,5 +1,4 @@
-import { useState } from "react"
-import { BlogType, useBlog } from "../hooks";
+import { useBlog } from "../hooks";
 import { BlogDetails } from "../components/BlogDetails";
 import { useParams } from "react-router-dom";
 
@@ -9,7 +8,7 @@ export const Blog=()=>{
         id:id||""
     });
 
-    if(loading){
+    if(loading||!blog){
         return<div>
             loading...
         </div>
